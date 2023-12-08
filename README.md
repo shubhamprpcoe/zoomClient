@@ -15,19 +15,12 @@ Getting Started
 Follow these steps to set up and run the React client app locally:
 
 Clone the Repository:
-
-bash
-Copy code
 git clone [repository-url]
 cd [project-directory]
+
 Install Dependencies:
-
-bash
-Copy code
 npm install
-Run the Development Server:
 
-bash
-Copy code
+Run the Development Server:
 npm start
 The app will be accessible at http://localhost:3000 by default.
