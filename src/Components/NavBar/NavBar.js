@@ -1,21 +1,83 @@
-import React from 'react';
-import Nav from 'react-bootstrap/Nav';
-import {Link} from "react-router-dom"
+import React from "react";
+import Nav from "react-bootstrap/Nav";
+import { Link } from "react-router-dom";
 
 export function NavBar(props) {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        {/* <Link class="navbar-brand" to="/SignUp">SignUp</Link>
-        <Link class="navbar-brand" to="/LogIn">LogIn</Link> */}
-        <ul class="navbar-nav">
-      <li class="nav-item active">
-      <Link class="navbar-brand" to="/SignUp">SignUp</Link>
+    <nav className="navbar navbar-expand-lg navbar-light shadow-sm bg-light fixed-top">
+      <div
+        className="container"
+        style={{ display: "flex", flexDirection: "row", flexWrap: "initial" }}
+      >
+        <a className="navbar-brand d-flex align-items-center" href="#">
+          <svg
+            width="40px"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 512 512"
+            style={{ enableBackground: "new 0 0 512 512" }}
+            xmlSpace="preserve"
+          >
+            <g>
+              <g>
+                <path
+                  d="M511.981,118.509c-0.135-2.956-1.892-5.726-4.565-7.04l-159.24-79.62c-3.776-1.887-8.363-0.64-10.664,2.898 L229.916,200.282l-55.413-85.891c-0.796-1.235-1.945-2.264-3.259-2.922l-159.24-79.62C6.582,29.138,0,33.218,0,39.268v79.621 c0,4.581,3.712,8.294,8.294,8.294c4.581,0,8.294-3.712,8.294-.294V52.687l142.652,71.326v335.32L16.587,388.008V154.277	c0-4.581-3.712-8.294-8.294-8.294c-4.581,0-8.294,3.712-8.294,8.294v238.857c0,3.142,1.775,6.013,4.585,7.418l159.24,79.62	c5.427,2.714,12.003-1.375,12.003-7.418V318.087l324.17,162.085c5.427,2.714,12.003-1.375,12.003-7.418V118.888	C512,118.76,511.987,118.636,511.981,118.509z M175.827,299.541v-152.5l145.239,225.12L175.827,299.541z M495.413,459.335
+                l-139.34-69.671l108.576-186.993c2.299-3.961,0.952-9.037-3.009-11.337c-3.96-2.298-9.036-0.953-11.337,3.009L344.094,377.258
+                L239.77,215.555L347.383,49.998l144.717,72.359l-26.387,45.446c-2.299,3.961-0.952,9.037,3.009,11.337	c3.958,2.297,9.035,0.953,11.337-3.009l15.354-26.443V459.335z"
+                  fill="#000"
+                />
+              </g>
+            </g>
+          </svg>
+          <span className="ml-3 font-weight-bold">BRAND</span>
+        </a>
+        <div
+          className=" navbar-collapse"
+          style={{ justifyContent: "right" }}
+          id="navbar4"
+        >
+          <ul
+            className="navbar-nav mr-auto pl-lg-4"
+            style={{ display: "flex", flexDirection: "row-reverse" }}
+          >
+            <li className="nav-item px-lg-2 active mx-3">
+              <a className="nav-link" href="#">
+                <span className="d-inline-block d-lg-none icon-width">
+                  <i className="fas fa-home"></i>
+                </span>
+                <Link class="navbar-brand" to="/SignUp">
+                  SignUp
+                </Link>
+              </a>
+            </li>
+            <li className="nav-item px-lg-2 mx-3">
+              <a className="nav-link" href="#">
+                <span className="d-inline-block d-lg-none icon-width">
+                  <i className="far fa-user"></i>
+                </span>
+                <Link class="navbar-brand" to="/LogIn">
+                  LogIn
+                </Link>
+              </a>
+            </li>
 
-      </li>
-      <li class="nav-item">
-      <Link class="navbar-brand" to="/LogIn">LogIn</Link>
-      </li>
-      </ul>
+            <li className="nav-item px-lg-2 mx-3">
+              <a className="nav-link" href="#">
+                <span className="d-inline-block d-lg-none icon-width">
+                  <i className="far fa-envelope"></i>
+                </span>
+                <Link class="navbar-brand" to="/">
+                  Home
+                </Link>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   );
 }
